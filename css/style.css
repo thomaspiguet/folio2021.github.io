@@ -44,18 +44,30 @@ Hero Slider - by CodyHouse.co
   width: 100%;
   height: 50px;
   background-color: #21272c;
+  background-color: rgba(0, 1, 1, 0.5);
 }
 
 @media only screen and (min-width: 768px) {
   .cd-header {
     height: 70px;
-    background-color: transparent;
+    /* background-color: transparent; */
   }
 }
+
+
+.cd-block {
+  background-color: #21272c;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  padding: 25px 50px;
+}
+
 
 .cd-header__logo {
   float: left;
   margin: 13px 0 0 5%;
+  color: #ffffff;
 }
 
 .cd-header__logo img {
@@ -216,12 +228,13 @@ Hero Slider - by CodyHouse.co
 
 .cd-hero__slide:first-of-type {
   background-color: #2c343b;
+  background-image: url("../assets/top-01.png");
+
 }
 
 .cd-hero__slide:nth-of-type(2) {
   background-color: #3d4952;
-  background-image: url("../assets/tech-1-mobile.jpg");
-}
+  background-image: url("../assets/top-01.png");}
 
 .cd-hero__slide:nth-of-type(3) {
   background-color: #586775;
@@ -230,10 +243,15 @@ Hero Slider - by CodyHouse.co
 
 .cd-hero__slide:nth-of-type(4) {
   background-color: #2c343b;
+  background-color: #fff;
   background-image: url("../assets/video-replace-mobile.jpg");
 }
 
 .cd-hero__slide:nth-of-type(5) {
+  background-color: #2c343b;
+  background-image: url(../assets/img.jpg);
+}
+.cd-hero__slide:nth-of-type(6) {
   background-color: #2c343b;
   background-image: url(../assets/img.jpg);
 }
@@ -286,6 +304,8 @@ Hero Slider - by CodyHouse.co
   left: 0;
   width: 100%;
   height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -294,7 +314,8 @@ Hero Slider - by CodyHouse.co
   display: block;
   min-height: 100%;
   min-width: 100%;
-  max-width: none;
+  /* max-width: none; */
+  max-width: auto;
   height: auto;
   width: auto;
   position: absolute;
@@ -360,7 +381,9 @@ Hero Slider - by CodyHouse.co
 @media only screen and (min-width: 768px) {
   .cd-hero__slide:nth-of-type(2),
   .cd-hero__slide:nth-of-type(3),
-  .cd-hero__slide:nth-of-type(4) {
+  .cd-hero__slide:nth-of-type(4),
+  .cd-hero__slide:nth-of-type(5),
+  .cd-hero__slide:nth-of-type(6) {
     background-image: none;
   }
   .cd-hero__content.cd-hero__content--full-width,
@@ -566,7 +589,11 @@ Hero Slider - by CodyHouse.co
       -ms-transform: translateX(400%);
           transform: translateX(400%);
 }
-
+.cd-hero__marker.cd-hero__marker--item-6 {
+  -webkit-transform: translateX(400%);
+      -ms-transform: translateX(400%);
+          transform: translateX(400%);
+}
 .cd-hero__nav ul::after {
   clear: both;
   content: "";
@@ -611,8 +638,8 @@ Hero Slider - by CodyHouse.co
           transform: translateX(-50%);
   background: url(../assets/cd-icon-navigation.svg) no-repeat 0 0;
 }
-
-.cd-hero__nav a:hover {
+/* //1// */
+.cd-hero__nagv a:hover {
   background-color: rgba(0, 1, 1, 0.5);
 }
 
@@ -620,33 +647,56 @@ Hero Slider - by CodyHouse.co
   background-position: 0 0;
 }
 
+
+
 .cd-hero__nav li.cd-selected:first-of-type a::before {
   background-position: 0 -24px;
 }
 
-.cd-hero__nav li:nth-of-type(2) a::before {
+
+
+.cd-hero__nav li:nth-of-type(4) a::before {
+  background-position: -72px -24px;
   background-position: -24px 0;
 }
 
-.cd-hero__nav li.cd-selected:nth-of-type(2) a::before {
+
+
+
+.cd-hero__nav li.cd-selected:nth-of-type(4) a::before {
   background-position: -24px -24px;
+
 }
+
+
 
 .cd-hero__nav li:nth-of-type(3) a::before {
-  background-position: -48px 0;
+  background-position: -72px -24px;
+  background-position: -24px 0;
 }
+
+
+
 
 .cd-hero__nav li.cd-selected:nth-of-type(3) a::before {
-  background-position: -48px -24px;
-}
+  background-position: -24px -24px;
 
-.cd-hero__nav li:nth-of-type(4) a::before {
+}
+/* //4// */
+
+.cd-hero__nav li:nth-of-type(2) a::before {
   background-position: -72px 0;
 }
 
-.cd-hero__nav li.cd-selected:nth-of-type(4) a::before {
+
+.cd-hero__nav li.cd-selected:nth-of-type(2) a::before {
   background-position: -72px -24px;
+
 }
+
+
+/* //5// */
+
 
 .cd-hero__nav li:nth-of-type(5) a::before {
   background-position: -96px 0;
@@ -655,6 +705,34 @@ Hero Slider - by CodyHouse.co
 .cd-hero__nav li.cd-selected:nth-of-type(5) a::before {
   background-position: -96px -24px;
 }
+
+
+.cd-hero__nav li:nth-of-type(5) a::before {
+  background-position: -48px 0;
+}
+
+
+.cd-hero__nav li.cd-selected:nth-of-type(5) a::before {
+  background-position: -48px -24px;
+}
+
+
+/* //1// */
+
+
+.cd-hero__nav li:nth-of-type(6) a::before {
+  background-position: -96px 0;
+}
+
+
+
+.cd-hero__nav li.cd-selected:nth-of-type(6) a::before {
+  background-position: -96px -24px;
+}
+
+
+
+
 
 @media only screen and (min-width: 768px) {
   .cd-hero__nav {

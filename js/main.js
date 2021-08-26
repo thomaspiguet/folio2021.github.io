@@ -14,7 +14,7 @@
 		this.oldSlideIndex = 0;
 		this.autoplay = hasClass(this.element, "js-cd-autoplay");
 		this.autoPlayId;
-		this.autoPlayDelay = 5000;
+		this.autoPlayDelay = 100000;
 		this.init();
 	};
 
@@ -54,7 +54,7 @@
 	HeroSlider.prototype.uploadVideo = function() {
 		var videoSlides = this.element.getElementsByClassName("js-cd-bg-video");
 		for( var i = 0; i < videoSlides.length; i++) {
-			if( videoSlides[i].offsetHeight > 0 ) {
+			if( videoSlides[i].offsetHeight > 10 ) {
 				// if visible - we are not on a mobile device 
 				var videoUrl = videoSlides[i].getAttribute("data-video");
 				videoSlides[i].innerHTML = "<video loop><source src='"+videoUrl+".mp4' type='video/mp4' /><source src='"+videoUrl+".webm' type='video/webm'/></video>";
