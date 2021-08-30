@@ -39,7 +39,7 @@ Hero Slider - by CodyHouse.co
 .cd-header {
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 20;
   left: 0;
   width: 100%;
   height: 50px;
