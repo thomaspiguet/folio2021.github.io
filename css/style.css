@@ -641,6 +641,8 @@ Hero Slider - by CodyHouse.co
   background: url(../assets/cd-icon-navigation.svg) no-repeat 0 0;
 }
 /* //1// */
+
+
 .cd-hero__nagv a:hover {
   background-color: rgba(0, 1, 1, 0.5);
 }
@@ -669,7 +671,6 @@ Hero Slider - by CodyHouse.co
   background-position: -24px -24px;
 
 }
-
 
 
 .cd-hero__nav li:nth-of-type(3) a::before {
