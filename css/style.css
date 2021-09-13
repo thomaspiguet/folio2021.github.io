@@ -270,11 +270,11 @@ Hero Slider - by CodyHouse.co
   background-color: #fff;
   background-image: url(../assets/img.jpg);
 }
-.cd-hero__slide:nth-of-type(6) {
+/* .cd-hero__slide:nth-of-type(6) {
   background-color: #2c343b;
   background-color: #fff;
   background-image: url(../assets/img.jpg);
-}
+} */
 
 .cd-hero__content.cd-hero__content--full-width,
 .cd-hero__content.cd-hero__content--half-width {
