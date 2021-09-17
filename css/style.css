@@ -404,11 +404,18 @@ Hero Slider - by CodyHouse.co
 }
 
 @media only screen and (min-width: 768px) {
-  .cd-hero__slide:nth-of-type(2),
+  /* .cd-hero__slide:nth-of-type(2),
   .cd-hero__slide:nth-of-type(3),
   .cd-hero__slide:nth-of-type(4),
   .cd-hero__slide:nth-of-type(5),
   .cd-hero__slide:nth-of-type(6) {
+    background-image: none;
+  } */
+
+  .cd-hero__slide:nth-of-type(2),
+  .cd-hero__slide:nth-of-type(3),
+  .cd-hero__slide:nth-of-type(4),
+  .cd-hero__slide:nth-of-type(5) {
     background-image: none;
   }
   .cd-hero__content.cd-hero__content--full-width,
@@ -614,11 +621,11 @@ Hero Slider - by CodyHouse.co
       -ms-transform: translateX(400%);
           transform: translateX(400%);
 }
-.cd-hero__marker.cd-hero__marker--item-6 {
+/* .cd-hero__marker.cd-hero__marker--item-6 {
   -webkit-transform: translateX(500%);
       -ms-transform: translateX(500%);
           transform: translateX(500%);
-}
+} */
 .cd-hero__nav ul::after {
   clear: both;
   content: "";
